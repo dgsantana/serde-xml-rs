@@ -1,7 +1,7 @@
 mod common;
 
 use common::init_logger;
-use log::info;
+use tracing::info;
 use serde::Deserialize;
 use serde_xml_rs::from_str;
 

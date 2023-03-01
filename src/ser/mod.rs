@@ -9,7 +9,7 @@ use self::{
     tuple::TupleSerializer,
 };
 use crate::error::{Error, Result};
-use log::debug;
+use tracing::debug;
 use serde::ser::Serialize;
 use std::{collections::HashMap, io::Write};
 use xml::writer::{EmitterConfig, EventWriter, XmlEvent};

@@ -1,6 +1,6 @@
 use super::{plain::to_plain_string, Serializer};
 use crate::error::{Error, Result};
-use log::debug;
+use tracing::debug;
 use serde::ser::Serialize;
 use std::io::Write;
 

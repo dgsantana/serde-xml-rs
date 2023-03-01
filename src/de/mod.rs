@@ -1,6 +1,6 @@
 use std::{io::Read, marker::PhantomData};
 
-use log::trace;
+use tracing::trace;
 use serde::de::{self, Unexpected};
 use serde::forward_to_deserialize_any;
 use xml::name::OwnedName;

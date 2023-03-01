@@ -1,10 +1,9 @@
 pub use rstest::{fixture, rstest};
-use simple_logger::SimpleLogger;
 use std::fmt::Debug;
 
 #[fixture]
 fn logger() {
-    let _ = SimpleLogger::new().init();
+    tracing_subscriber::fmt().init();
 }
 
 mod de {
